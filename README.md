@@ -14,3 +14,6 @@
 
 
 - TypeScript
+
+
+Card graphics from this repo: https://github.com/richardschneider/cardsJS
