@@ -1,0 +1,34 @@
+.player {
+  &.winner {
+    border: 4px double #2196f3;
+    .player-name {
+        color: #0069c0;
+    }
+  }
+  .card-pair {
+    &:not(:first-child) {
+      margin-left: 5px;
+    }
+    div:first-child img {
+      transform: translateX(30%);
+    }
+    div:nth-child(2) img {
+      transform: translateX(-30%);
+    }
+  }
+}
+.top-player {
+    margin-bottom: 100px;;
+}
+.bottom-player {
+    margin-top: 100px;;
+}
+.color-white {
+    border: 1px solid white;
+}
+.color-orange {
+    border: 1px solid #ff9800;
+}
+.color-red {  
+    border: 1px solid red;
+}

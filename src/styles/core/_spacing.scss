@@ -1,0 +1,16 @@
+$spacing-xs: 0.25rem;
+$spacing-s: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 3rem;
+
+$spacing-directions: (top, right, bottom, left);
+$spacing-sizes: (xs: $spacing-xs, s: $spacing-s, sm: $spacing-sm, md: $spacing-md, lg: $spacing-lg);
+
+@each $direction in $spacing-directions {
+  @each $size, $value in $spacing-sizes {
+    .spacing-#{$direction}-#{$size} {
+      margin-#{$direction}: $value;
+    }
+  }
+}
