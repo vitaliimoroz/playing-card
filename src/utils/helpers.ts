@@ -2,7 +2,7 @@ import ICard from "../shared/interfaces/ICard";
 import IHand from "../shared/interfaces/IHand";
 import { MOBILE_BREAKPOINT, TIE } from "./constants";
 
-export const shuffle = (a: any[]) => {
+export const shuffle = (a: ICard[]) => {
     for (let i = a.length; i; i--) {
         let j = Math.floor(Math.random() * i);
         [a[i - 1], a[j]] = [a[j], a[i - 1]];
